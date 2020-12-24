@@ -499,9 +499,10 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  15.75
-    #define DEFAULT_Ki   0.64
-    #define DEFAULT_Kd  96.52
+    #define DEFAULT_Kp 10.98
+    #define DEFAULT_Ki 0.49
+    #define DEFAULT_Kd 61.61
+
   #endif
 #endif // PIDTEMP
 
@@ -1086,14 +1087,14 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR true
+#define INVERT_X_DIR false
 #define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_Z_DIR false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false

@@ -2298,7 +2298,7 @@
   #if AXIS_IS_TMC(Z)
     #define Z_CURRENT       800
     #define Z_CURRENT_HOME  Z_CURRENT
-    #define Z_MICROSTEPS     16
+    #define Z_MICROSTEPS     8
     #define Z_RSENSE          0.11
     #define Z_CHAIN_POS      -1
   #endif
@@ -2387,14 +2387,14 @@
    * Override default SPI pins for TMC2130, TMC2160, TMC2660, TMC5130 and TMC5160 drivers here.
    * The default pins can be found in your board's pins file.
    */
-  #define X_CS_PIN          54 //A0
-  #define Y_CS_PIN          55
-  #define Z_CS_PIN          56
+  #define X_CS_PIN          57 //A3
+  #define Y_CS_PIN          58 //A4
+  #define Z_CS_PIN          59 //A5
   //#define X2_CS_PIN         -1
   //#define Y2_CS_PIN         -1
   //#define Z2_CS_PIN         -1
   //#define Z3_CS_PIN         -1
-  #define E0_CS_PIN         57
+  #define E0_CS_PIN         60 //A6
   //#define E1_CS_PIN         -1
   //#define E2_CS_PIN         -1
   //#define E3_CS_PIN         -1
@@ -2409,9 +2409,9 @@
    * but you can override or define them here.
    */
   #define TMC_USE_SW_SPI
-  #define TMC_SW_MOSI       58
-  #define TMC_SW_MISO       59
-  #define TMC_SW_SCK        60
+  #define TMC_SW_MOSI       54 //A0
+  #define TMC_SW_MISO       56 //A2
+  #define TMC_SW_SCK        55 //A1
 
   /**
    * Four TMC2209 drivers can use the same HW/SW serial port with hardware configured addresses.
